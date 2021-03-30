@@ -1,1 +1,21 @@
 # webpack-project
+- npm init -y
+    - -y zegt yes tegen iedereen
+    - package.json schrijven
+    - als project in git repo zit --> al gebruiken om package.json in te vullen
+- npm install -D webpack webpack-cli webpack-dev-server
+- bij xcode prob --> zoek op de fout en reinstall xcode
+- open package.json
+    - alles mag weg --> not needed
+    - over laten: dependencies + scripts
+- nieuw script toevoegen --> json file, dus fields zijn strings met quotes 
+  - "start": webpack serve
+  - "watch": webpack --watch
+  - "build": webpack
+- nmp install --> warnings --> we missen wat velden, maar die zijn enkel van belang voor echte npm packages die je wil publishen, niet zinnig voor lokale repo's
+  - private: true
+- add `index.js` to src folder
+- run script to build the project
+  - `npm run build` --> npm run + een van de scripts uit package.json
+  - dit gaat webpack uitvoeren en webpack gaat zijn kunstje doen en resultaat dumpen in dist folder
+  - scriptje in index.js kan gerund worden met `node dist/main.js`
