@@ -19,3 +19,9 @@
   - `npm run build` --> npm run + een van de scripts uit package.json
   - dit gaat webpack uitvoeren en webpack gaat zijn kunstje doen en resultaat dumpen in dist folder
   - scriptje in index.js kan gerund worden met `node dist/main.js`
+- `npm install -D babel-loader @babel/core @babel/preset-env`
+  -  babel om te transpilen is een plugin van webpack
+  - voor een entry naar de output dir wordt overgezet, kan een loader of een plugin eerst transformaties toepassen. Plugins kunnen veel meer dan loaders
+  - babel is zo een plugin
+  - babel/preset-env gebruiken we om te zeggen --> transpile zodat alle oude browsers ook worden ondersteund, maar enkel als ze nog meer dan 5% marktshare hebben enzo
+- 
